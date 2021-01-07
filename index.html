@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brasileirão SA4Ever</title>
-  <link href="styles.css" type="text/css" rel="stylesheet">
+  <link 
+  rel="stylesheet" 
+  href="styles.css"
+  media="print"
+  onload="this.media='all'"
+/>
+<link rel="preload" href="styles.css" as="style">
+<style>
+  body {
+    background-image: url(bg.png);
+  }
+  </style>
 </head>
-<body style="background-image: url('https://raw.githubusercontent.com/guilhermecugler/brasileiraosa4ever/main/bg.png');">
+<body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <script src="script.js"></script>
@@ -20,6 +31,10 @@
 
   
 <div id="target">
+</div>
+<br>
+
+<div id="target2">
 </div>
 
 </body>
