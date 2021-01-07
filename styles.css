@@ -1,105 +1,10 @@
 #target {
-  border:1px solid #000;
+  margin: auto;
+  width: 80%;
+  border: 0px solid green;
+  padding: 10px;
 }
 
-#scheduler {
-	background: #fcf5f5;
-	border-radius: 10px;
-	padding: 5% 5%;
-    padding-bottom: 15px;
-	margin: 20px auto;
-    max-width: 580px;
-    text-align: left;
-}
-@media (max-width: 600px) {
-    #scheduler {
-        border-radius: 0px;
-    }
-    #scheduler h3 {
-        font-size: 140%;
-    }
-}
-	#scheduler ol {
-		list-style: none;
-	}
-	#scheduler ol li>div {
-		font-weight: normal;
-		color: #000000;
-		font-size: 13px;
-	}
-	#scheduler li {
-		margin-bottom: 30px;
-	}
-	#scheduler li.last {
-		margin-bottom: 14px;
-	}
-	#scheduler h3 {
-		font-size: 160%;
-		font-weight: normal;
-		margin-bottom: 12px;
-        line-height: 25px;
-	}
-	#scheduler p {
-		font-size: 11px;
-		margin-top: 4px;
-	}
-	#scheduler #locations-yes {
-		margin-bottom: 5px;
-	}
-	#scheduler #scheduler-submit {
-		font-weight: normal;
-		padding: 10px 40px;
-		color: #860000;
-        margin-bottom: 10px;
-	}
-
-	.ui-widget {
-		font-size: 13px !important;
-	}
-	.ui-dialog {
-		box-shadow: 4px 4px 6px #999;
-		border: 1px solid #968888 !important;
-	}
-	.ui-dialog input {
-		margin-top: 5px;
-		width: 150px;
-	}
-    
-    #skyscraper {
-        float: right;
-    }
-    @media (min-width: 600px) {
-        #skyscraper ins {
-            width: 120px;
-            height: 600px;
-        }
-    }
-    @media (max-width: 599px) {
-        #skyscraper ins {
-            display: none;
-        }
-    }
-        
-
-#advanced-options {
-    height: 193px; /* set this because of the sliding animation */
-}
-#advanced-options .field-wrapper {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-#advanced-options .field {
-    font-size: 11px;
-}
-.question-label {
-    margin-top: 14px;
-    margin-bottom: 4px;
-    display: inline-block;
-}
-.question-label.first {
-    margin-top: 0px;
-}
 .tooltip {
     cursor: help;
 }
@@ -126,14 +31,40 @@ h2 {
     margin-bottom: 3%;
     padding-bottom: 2px;
 }
+
+table {
+  background-color: #f3f3f3;
+}
+
 .schedule {
-    border-collapse: collapse;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #ccc;
-    table-layout: fixed;
-    text-align: left;
-    width: 100%;
-    margin: 0px auto;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+}
+.schedule th,
+.schedule td {
+    padding: 12px 15px;
+}
+.schedule tbody tr {
+  border-bottom: 1px solid #dddddd;
+  
+}
+.schedule tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.schedule tbody tr:last-of-type {
+  border-bottom: 2px solid #d42020;
+}
+
+.schedule tbody tr.active-row {
+  font-weight: bold;
+  color: #d42020;
 }
     .schedule td {
         padding: 1%;
@@ -161,8 +92,13 @@ h2 {
         font-weight: normal;
         font-size: 120%;
     }
+    .schedule thead tr {
+      background-color: #d42020;
+      color: #ffffff;
+      text-align: center;
+  }
     .schedule tbody.row-separator:hover, .schedule tbody.row-separator tr:hover, .schedule thead tr:hover {
-        background: none;
+        background-color: #f3f3f3;
     }
     .schedule tbody.row-separator td {
         border-bottom: 3px solid #ccc;
