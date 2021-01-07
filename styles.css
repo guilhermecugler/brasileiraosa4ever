@@ -4,6 +4,9 @@
   border: 0px solid green;
   padding: 10px;
 }
+body{
+    background-image: url("bg.jpg");
+}
 
 .tooltip {
     cursor: help;
