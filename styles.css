@@ -8,6 +8,13 @@ body{
     background-image: url("bg.jpg");
 }
 
+.pontos{
+    color: #f3f3f3;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
+}
+
 .tooltip {
     cursor: help;
 }
