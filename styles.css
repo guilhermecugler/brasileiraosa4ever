@@ -1,345 +1,385 @@
 #target {
-  margin: auto;
-  width: 80%;
-  border: 0px solid green;
-  padding: 10px;
-}
-body{
-    background-image: url("bg.jpg");
-}
+    margin: auto;
+    width: 80%;
+    border: 0px solid green;
+    padding: 10px;
+  }
 
-.pontos{
-    color: #f3f3f3;
+  #target2 {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 0px solid green;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    text-shadow: 2px 2px black;
+    display: inline;
+  }
 
-}
+  #target2 table {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.tooltip {
-    cursor: help;
-}
-
-.clear {
-    clear: both;
-}
-
-.tournament-url {
-    padding-left: 3em;
-}
-@media (max-width: 600px) {
-    .tournament-url {
-        word-wrap: break-word;
-        text-indent: -1em;
-    }
-}
-
-h2 {
-    color: #860000;
-    font-weight: bold;
-    border-bottom: 1px solid #860000;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    padding-bottom: 2px;
-}
-
-table {
-  background-color: #f3f3f3;
-}
-
-.schedule {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  text-align: center;
-
-}
-.schedule th,
-.schedule td {
-    padding: 12px 15px;
-}
-.schedule tbody tr {
-  border-bottom: 1px solid #dddddd;
+  body{
+      background-image: url("bg.jpg");
+  }
   
-}
-.schedule tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.schedule tbody tr:last-of-type {
-  border-bottom: 2px solid #d42020;
-}
-
-.schedule tbody tr.active-row {
-  font-weight: bold;
-  color: #d42020;
-}
-    .schedule td {
-        padding: 1%;
-        vertical-align: top;
-        font-size: 100%;
-    }
-    .schedule.adminrights td.editable:hover {
-        background: url(../images/icon-edit.png) right 6px no-repeat;
-    }
-    .schedule tbody.even {
-        background: #eee;
-    }
-    .schedule tr {
-        border-bottom: 1px solid #ccc;
-        padding: 1%;
-    }
-    .schedule tr:hover {
-        background: #f9f9f9;
-    }
-    .schedule th {
-        border-bottom: 3px solid #ccc;
+  .pontos{
+      color: #f3f3f3;
+      text-align: center;
+      text-shadow: 2px 2px black;
+  
+  }
+  
+  .tooltip {
+      cursor: help;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  .tournament-url {
+      padding-left: 3em;
+  }
+  @media (max-width: 600px) {
+      .tournament-url {
+          word-wrap: break-word;
+          text-indent: -1em;
+      }
+  }
+  
+  h2 {
+      color: #860000;
+      font-weight: bold;
+      border-bottom: 1px solid #860000;
+      margin-right: 5%;
+      margin-bottom: 3%;
+      padding-bottom: 2px;
+  }
+  
+  table {
+    background-color: #f3f3f3;
+  }
+  
+  .schedule {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  
+  }
+  .schedule th,
+  .schedule td {
+      padding: 12px 15px;
+  }
+  .schedule tbody tr {
+    border-bottom: 1px solid #dddddd;
+    
+  }
+  .schedule tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .schedule tbody tr:last-of-type {
+    border-bottom: 2px solid #d42020;
+  }
+  
+  .schedule tbody tr.active-row {
+    font-weight: bold;
+    color: #d42020;
+  }
+      .schedule td {
+          padding: 1%;
+          vertical-align: top;
+          font-size: 100%;
+      }
+      .schedule.adminrights td.editable:hover {
+          background: url(../images/icon-edit.png) right 6px no-repeat;
+      }
+      .schedule tbody.even {
+          background: #eee;
+      }
+      .schedule tr {
+          border-bottom: 1px solid #ccc;
+          padding: 1%;
+      }
+      .schedule tr:hover {
+          background: #f9f9f9;
+      }
+      .schedule th {
+          border-bottom: 3px solid #ccc;
+          text-align: center;
+          padding-bottom: 2%;
+          padding: 1%;
+          font-weight: normal;
+          font-size: 120%;
+      }
+      .schedule thead tr {
+        background-color: #d42020;
+        color: #ffffff;
         text-align: center;
-        padding-bottom: 2%;
-        padding: 1%;
-        font-weight: normal;
-        font-size: 120%;
     }
-    .schedule thead tr {
-      background-color: #d42020;
-      color: #ffffff;
+      .schedule tbody.row-separator:hover, .schedule tbody.row-separator tr:hover, .schedule thead tr:hover {
+          background-color: #f3f3f3;
+      }
+      .schedule tbody.row-separator td {
+          border-bottom: 3px solid #ccc;
+          border-top: 3px solid #ccc;
+      }
+      
+      /* cell widths, hard-code for consistent appearance with editing */
+      .schedule th.round-header {
+          width: 6%;
+      }
+    /*  @media (max-width: 800px) {
+          .schedule th.round-header {
+              visibility: hidden;
+          }
+      } */
+  
+      .schedule td.round-number {
+          text-align: center;
+          width: 7%;
+      }
+      .schedule .player {
+          width: 24%;
+      }
+      .schedule td.separator, .schedule th.separator {
+          text-align: center;
+          width: 2%;
+      }
+      .schedule .score {
+          width: 13%;
+      }
+      .schedule td.note, .schedule th.note {
+          width: 19%;
+      }
+      
+      .schedule th.player, th.score {
+          overflow: visible;
+      }
+      
+      @media (min-width: 600px) {
+          .schedule.locations-scheduled .player, .schedule.locations-scheduled .location {
+              width: 18%;
+          }
+          .schedule.locations-scheduled .score {
+              width: 10%;
+          }
+          .note-location-switch {
+              display: none;
+          }
+          .mobile-hint {
+              display: none;
+          }
+      }
+      @media (max-width: 599px) {
+          .schedule.locations-scheduled .note {
+              display: none;
+          }
+          .schedule th.note-location-switch {
+              width: 19%;
+              font-size: 100%;
+              line-height: 100%;
+          }
+          th.note-location-switch span {
+              display: block;
+              color: #ccc;
+          }
+          th.note-location-switch span.active {
+              color: #000;
+          }
+          th.note-location-switch .location-switch {
+              /*border-bottom: 1px solid #000;*/
+          }
+          .schedule th.note, .schedule th.location {
+              display: none;
+          }
+      }
+
+  a.highlight {
+      display: block;
+      border: 1px solid #860000;
+      border-radius: 8px;
+      padding: 3px;
+      text-align: center;
+      margin-top: 20px;
+  }
+  a.highlight:hover {
+      color: #fff;
+      background: #860000;
+  }
+  
+  .schedule.results {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  
+  }
+  .schedule.results th,
+  .schedule.results td {
+      padding: 12px 15px;
+  }
+  .schedule.results tbody tr {
+    border-bottom: 1px solid #dddddd;
+    
+  }
+  .schedule.results tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .schedule.results tbody tr:last-of-type {
+    border-bottom: 2px solid #d42020;
+  }
+  
+  .schedule.results tbody tr.active-row {
+    font-weight: bold;
+    color: #d42020;
+  }
+      .schedule.results td {
+          padding: 1%;
+          vertical-align: top;
+          font-size: 100%;
+      }
+
+      .schedule.results tbody.even {
+          background: #eee;
+      }
+      .schedule.results tr {
+          border-bottom: 1px solid #ccc;
+          padding: 1%;
+      }
+      .schedule.results tr:hover {
+          background: #f9f9f9;
+      }
+      .schedule.results th {
+          border-bottom: 3px solid #ccc;
+          text-align: center;
+          padding-bottom: 2%;
+          padding: 1%;
+          font-weight: normal;
+          font-size: 120%;
+      }
+      .schedule.results thead tr {
+        background-color: #d42020;
+        color: #ffffff;
+        text-align: center;
+    }
+      .schedule.results tbody.row-separator:hover, .schedule.results tbody.row-separator tr:hover, .schedule.results thead tr:hover {
+          background-color: #f3f3f3;
+      }
+      .schedule.results tbody.row-separator td {
+          border-bottom: 3px solid #ccc;
+          border-top: 3px solid #ccc;
+      }
+      
+      /* cell widths, hard-code for consistent appearance with editing */
+      .schedule.results th.round-header {
+          width: 6%;
+      }
+    /*  @media (max-width: 800px) {
+          .schedule.results th.round-header {
+              visibility: hidden;
+          }
+      } */
+  
+      .schedule.results td.round-number {
+          text-align: center;
+          width: 7%;
+      }
+      .schedule.results .player {
+          width: 24%;
+      }
+      .schedule.results td.separator, .schedule.results th.separator {
+          text-align: center;
+          width: 2%;
+      }
+      .schedule.results .score {
+          width: 13%;
+      }
+      .schedule.results td.note, .schedule.results th.note {
+          width: 19%;
+      }
+      
+      .schedule.results th.player, th.score {
+          overflow: visible;
+      }
+      
+      @media (min-width: 600px) {
+          .schedule.results.locations-scheduled .player, .schedule.results.locations-scheduled .location {
+              width: 18%;
+          }
+          .schedule.results.locations-scheduled .score {
+              width: 10%;
+          }
+          .note-location-switch {
+              display: none;
+          }
+          .mobile-hint {
+              display: none;
+          }
+      }
+      @media (max-width: 599px) {
+          .schedule.results.locations-scheduled .note {
+              display: none;
+          }
+          .schedule.results th.note-location-switch {
+              width: 19%;
+              font-size: 100%;
+              line-height: 100%;
+          }
+          th.note-location-switch span {
+              display: block;
+              color: #ccc;
+          }
+          th.note-location-switch span.active {
+              color: #000;
+          }
+          th.note-location-switch .location-switch {
+              /*border-bottom: 1px solid #000;*/
+          }
+          .schedule.results th.note, .schedule.results th.location {
+              display: none;
+          }
+      }
+  
+  strong {
+      font-weight: 700;
+  }
+  
+  #tournament-number-highlight {
+      font-style: italic;
       text-align: center;
   }
-    .schedule tbody.row-separator:hover, .schedule tbody.row-separator tr:hover, .schedule thead tr:hover {
-        background-color: #f3f3f3;
-    }
-    .schedule tbody.row-separator td {
-        border-bottom: 3px solid #ccc;
-        border-top: 3px solid #ccc;
-    }
-    
-    /* cell widths, hard-code for consistent appearance with editing */
-    .schedule th.round-header {
-        width: 6%;
-    }
-  /*  @media (max-width: 800px) {
-        .schedule th.round-header {
-            visibility: hidden;
-        }
-    } */
-
-    .schedule td.round-number {
-        text-align: center;
-        width: 7%;
-    }
-    .schedule .player {
-        width: 24%;
-    }
-    .schedule td.separator, .schedule th.separator {
-        text-align: center;
-        width: 2%;
-    }
-    .schedule .score {
-        width: 13%;
-    }
-    .schedule td.note, .schedule th.note {
-        width: 19%;
-    }
-    
-    .schedule th.player, th.score {
-        overflow: visible;
-    }
-    
-    @media (min-width: 600px) {
-        .schedule.locations-scheduled .player, .schedule.locations-scheduled .location {
-            width: 18%;
-        }
-        .schedule.locations-scheduled .score {
-            width: 10%;
-        }
-        .note-location-switch {
-            display: none;
-        }
-        .mobile-hint {
-            display: none;
-        }
-    }
-    @media (max-width: 599px) {
-        .schedule.locations-scheduled .note {
-            display: none;
-        }
-        .schedule th.note-location-switch {
-            width: 19%;
-            font-size: 100%;
-            line-height: 100%;
-        }
-        th.note-location-switch span {
-            display: block;
-            color: #ccc;
-        }
-        th.note-location-switch span.active {
-            color: #000;
-        }
-        th.note-location-switch .location-switch {
-            /*border-bottom: 1px solid #000;*/
-        }
-        .schedule th.note, .schedule th.location {
-            display: none;
-        }
-    }
-
-
-    .schedule td.being-edited {
-        padding: 0.1em;
-        padding-left: 1%;
-    }
-    .schedule td.editable input {
-        width: 100%;
-        height: 100%;
-        border: none;
-        font-size: 100%;
-        background: #fffff5;
-        font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, Arial, Helvetica, sans-serif;
-    }
-    
-    .addthis_toolbox {
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-    
-    
-.schedule.results td, .schedule.results th {
-    text-align: center;
-}
-.schedule.results .player {
-    width: 20%;
-    text-align: left;
-}
-.schedule.results .rank {
-    width: 5%;
-    text-align: left;
-}
-
-@media (max-width: 599px) {
-    .schedule.results thead {
-        display: none;
-    }
-    .schedule.results {
-        border-top: 3px solid #ccc;
-    }
-    .schedule.results .player {
-        width: 40%;
-    }
-}
-
-.fineprint {
-    font-size: 11px;
-    line-height: 14px;
-    text-align: left;
-}
-    
-.status-popup {
-    position: fixed;
-    top: -10px;
-    left: 50%;
-    width: 350px;
-    margin-left: -183px;
-    height: 20px;
-    padding: 6px;
-    padding-top: 16px;
-    background-color: #ffffcc;
-    border: 1px solid #999900;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 10;
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .status-popup {
-        border-radius: 0px;
-    }
-}
-
-.page-section {
-    margin-top: 10%;
-}
-.page-section ol, .page-section ul {
-    padding: 0px 5%;
-}
-.page-section li {
-    margin-bottom: 10px
-}
-
-.fb-like {
-    margin-top: 10px;
-}
-
-.hidden {
-    display: none;
-}
-
-
-#rightAd {
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-.horizontalAd {
-    margin: 1em auto;
-    padding: 0 2%;
-}
-@media (min-width: 599px) {
-    .home-top-ad {
-        display: none;
-    }
-}
-#sync-link {
-    font-size: 10px;
-}
-
-a.highlight {
-    display: block;
-    border: 1px solid #860000;
-    border-radius: 8px;
-    padding: 3px;
-    text-align: center;
-    margin-top: 20px;
-}
-a.highlight:hover {
-    color: #fff;
-    background: #860000;
-}
-
-p.admintext {
-    margin-top: 20px;
-}
-
-strong {
-    font-weight: 700;
-}
-
-#tournament-number-highlight {
-    font-style: italic;
-    text-align: center;
-}
-
-#comments-list {
-    display: none;
-}
-
-@media (max-width: 525px) {
-    #skyscraper {
-        display: none;
-    }
-}
-
-
-#disqus_thread {
-    margin: 0 -2%;
-}
-
-.alert {
-    border: 2px solid #000;
-    border-radius: 5px;
-    font-size: 110%;
-    margin: 6%;
-    padding: 1% 3% !important;
-}
+  
+  #comments-list {
+      display: none;
+  }
+  
+  @media (max-width: 525px) {
+      #skyscraper {
+          display: none;
+      }
+  }
+  
+  .alert {
+      border: 2px solid #000;
+      border-radius: 5px;
+      font-size: 110%;
+      margin: 6%;
+      padding: 1% 3% !important;
+  }
