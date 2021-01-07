@@ -11,7 +11,7 @@ $(function() {
     }
     return xhr;
 	}
-  var req = createCORSRequest("GET", "https://cors-anywhere.herokuapp.com/https://tournamentscheduler.net/schedule/MTA4MTE3NTEwMDY");
+  var req = createCORSRequest("GET", "https://cors-anywhere.herokuapp.com/https://tournamentscheduler.net/schedule/MTA4MTIyMDc3NzE");
   if (req) {
   	req.onload = function(data) {
     	console.log(data);
