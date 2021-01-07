@@ -5,7 +5,7 @@
   padding: 10px;
 }
 body{
-    background-image: url("https://github.com/guilhermecugler/brasileiraosa4ever/blob/main/bg.jpg");
+    background-image: url("bg.jpg");
 }
 
 .tooltip {
@@ -112,11 +112,11 @@ table {
     .schedule th.round-header {
         width: 6%;
     }
-    @media (max-width: 900px) {
+  /*  @media (max-width: 800px) {
         .schedule th.round-header {
             visibility: hidden;
         }
-    }
+    } */
 
     .schedule td.round-number {
         text-align: center;
